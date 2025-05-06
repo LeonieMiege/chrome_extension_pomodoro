@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaya, my Focus Companion</title>
+    <script defer src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <section id="focus-timer">
+        <h3 id="task-user"></h3>
+        <div id="timer"></div>
+    </section>
+
+    <section class="form" id="form">
+        <h1>Flaya, my Focus Companion</h1>
+        <div class="divInputs">
+            <label for="task"><strong>What do you want to do today?</strong></label> <br>
+            <input id="task" type="text">
+        </div>
+        <div>
+            <label for="focus-time"> <strong>Focus session:</strong></label> <br>
+            <select name="focus-time" id="focus-time">
+                <option value="">Select an option</option>
+                <option value="0.2">Demo</option>
+                <option value="25">25 min</option>
+                <option value="30">30 min</option>
+                <option value="35">35 min</option>
+                <option value="40">40 min</option>
+                <option value="45">45 min</option>
+            </select>
+        </div>
+        <div>
+            <p>
+                <strong>Mini break:</strong> After each focus session, take a 5min break.
+            </p>
+        </div>
+        <div>
+            <label for="break-time"><strong>Big break:</strong> When you're done, enjoy a bigger break!</label> <br>
+            <select name="break-time" id="break-time">
+                <option value="">Select an option</option>
+                <option value="0.2">Demo</option>
+                <option value="20">20 min</option>
+                <option value="25">25 min</option>
+                <option value="30">30 min</option>
+            </select>
+        </div>
+        <br>
+        <label for="blocked-url"><strong>Distracting websites:</strong> Blocked during focus sessions.</label> <br>
+        <div class="blocked-url-area">
+            <textarea id="blocked-url" rows="5" class="blocked-url" type="url" placeholder="example.com"></textarea>
+            <img src="images/dragon_icon.png" alt="small-dragon">
+        </div>
+        <button id="start-button">START</button>
+    </section>
+</body>
+
+</html>
